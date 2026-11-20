@@ -1,8 +1,7 @@
 # Project Brief: BaCReMS (Barangay Certificate Request Management System)
 
 ## 1. The problem
-Residents have to go to the barangay hall to request certificates, and
-officials record requests on paper.
+Residents need to visit the barangay hall personally to request certificates, which takes time and effort. Meanwhile, barangay officials manually record and manage requests using paper documents, making the process slower and harder to organize.
 
 ## 2. Users and what they need to do
 
