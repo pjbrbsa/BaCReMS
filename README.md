@@ -2,5 +2,5 @@
 An online Barangay Certificate Request Management System for processing, managing, and monitoring barangay certificate applications and issuance.
 
 # Members
-Marinel Rebuya
+Marinel Rebuya,
 Princess Joy Barbosa
