@@ -7,27 +7,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <header class="site-header">
     <div class="container">
-      <a href="#" class="brand">BaCReMS</a>
-      <nav aria-label="Main">
+      <a href="list.html" class="brand">BaCReMS</a>
+      <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="#">Home</a></li>
           <li><a href="list.html" aria-current="page">Requests</a></li>
           <li><a href="#">Residents</a></li>
           <li><a href="#">Certificate Types</a></li>
           <li><a href="#">Staff</a></li>
+          <li><a href="#" class="logout-link">Logout</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-
     <div class="page-head">
       <h1>Certificate Requests</h1>
       <a href="form.html" class="btn">+ New Request</a>
@@ -79,13 +78,7 @@
             <td data-label="Certificate">Certificate of Residency</td>
             <td data-label="Date">2026-11-15</td>
             <td data-label="Status"><span class="status">Pending</span></td>
-            <td class="cell-actions">
-              <div class="actions">
-                <a href="#" class="btn-secondary btn-sm">View</a>
-                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
-                <button type="button" class="btn-danger btn-sm">Delete</button>
-              </div>
-            </td>
+            <td class="cell-actions"><div class="actions"><a href="#" class="btn-secondary btn-sm">View</a><a href="form.html" class="btn-secondary btn-sm">Edit</a><button type="button" class="btn-danger btn-sm">Delete</button></div></td>
           </tr>
           <tr>
             <td data-label="Request ID">REQ05</td>
@@ -93,13 +86,7 @@
             <td data-label="Certificate">Certificate of Indigency</td>
             <td data-label="Date">2026-11-14</td>
             <td data-label="Status"><span class="status">Pending</span></td>
-            <td class="cell-actions">
-              <div class="actions">
-                <a href="#" class="btn-secondary btn-sm">View</a>
-                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
-                <button type="button" class="btn-danger btn-sm">Delete</button>
-              </div>
-            </td>
+            <td class="cell-actions"><div class="actions"><a href="#" class="btn-secondary btn-sm">View</a><a href="form.html" class="btn-secondary btn-sm">Edit</a><button type="button" class="btn-danger btn-sm">Delete</button></div></td>
           </tr>
           <tr>
             <td data-label="Request ID">REQ04</td>
@@ -107,12 +94,7 @@
             <td data-label="Certificate">Barangay Clearance</td>
             <td data-label="Date">2026-11-12</td>
             <td data-label="Status"><span class="status status-approved">Approved</span></td>
-            <td class="cell-actions">
-              <div class="actions">
-                <a href="#" class="btn-secondary btn-sm">View</a>
-                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
-              </div>
-            </td>
+            <td class="cell-actions"><div class="actions"><a href="#" class="btn-secondary btn-sm">View</a><a href="form.html" class="btn-secondary btn-sm">Edit</a></div></td>
           </tr>
           <tr>
             <td data-label="Request ID">REQ02</td>
@@ -120,13 +102,7 @@
             <td data-label="Certificate">Certificate of Residency</td>
             <td data-label="Date">2026-11-10</td>
             <td data-label="Status"><span class="status">Pending</span></td>
-            <td class="cell-actions">
-              <div class="actions">
-                <a href="#" class="btn-secondary btn-sm">View</a>
-                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
-                <button type="button" class="btn-danger btn-sm">Delete</button>
-              </div>
-            </td>
+            <td class="cell-actions"><div class="actions"><a href="#" class="btn-secondary btn-sm">View</a><a href="form.html" class="btn-secondary btn-sm">Edit</a><button type="button" class="btn-danger btn-sm">Delete</button></div></td>
           </tr>
           <tr>
             <td data-label="Request ID">REQ03</td>
@@ -134,12 +110,7 @@
             <td data-label="Certificate">Certificate of Indigency</td>
             <td data-label="Date">2026-11-05</td>
             <td data-label="Status"><span class="status status-approved">Approved</span></td>
-            <td class="cell-actions">
-              <div class="actions">
-                <a href="#" class="btn-secondary btn-sm">View</a>
-                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
-              </div>
-            </td>
+            <td class="cell-actions"><div class="actions"><a href="#" class="btn-secondary btn-sm">View</a><a href="form.html" class="btn-secondary btn-sm">Edit</a></div></td>
           </tr>
           <tr>
             <td data-label="Request ID">REQ01</td>
@@ -147,12 +118,7 @@
             <td data-label="Certificate">Barangay Clearance</td>
             <td data-label="Date">2026-11-03</td>
             <td data-label="Status"><span class="status status-approved">Approved</span></td>
-            <td class="cell-actions">
-              <div class="actions">
-                <a href="#" class="btn-secondary btn-sm">View</a>
-                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
-              </div>
-            </td>
+            <td class="cell-actions"><div class="actions"><a href="#" class="btn-secondary btn-sm">View</a><a href="form.html" class="btn-secondary btn-sm">Edit</a></div></td>
           </tr>
         </tbody>
       </table>
@@ -169,13 +135,10 @@
         <li><a href="#" aria-label="Next page">&gt;</a></li>
       </ul>
     </nav>
-
   </main>
 
   <footer class="site-footer">
     <div class="container">BaCReMS: Barangay Certificate Request Management System</div>
   </footer>
-
 </body>
 </html>
-
