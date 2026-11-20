@@ -1,5 +1,5 @@
 CREATE TABLE resident (
-  resident_id    INT          PRIMARY KEY,
+  resident_id    VARCHAR(10)  PRIMARY KEY,
   resident_name  VARCHAR(100) NOT NULL,
   birth_date     DATE         NOT NULL,
   gender         VARCHAR(10)  NOT NULL,
@@ -21,8 +21,8 @@ CREATE TABLE barangay_staff (
 );
 
 CREATE TABLE certificate_request (
-  request_id           INT          PRIMARY KEY,
-  resident_id          INT          NOT NULL,
+  request_id           VARCHAR(10)  PRIMARY KEY,
+  resident_id          VARCHAR(10)  NOT NULL,
   certificate_type_id  VARCHAR(10)  NOT NULL,
   staff_id             VARCHAR(10)  NOT NULL,
   request_date         DATE         NOT NULL DEFAULT (CURRENT_DATE),
@@ -39,7 +39,7 @@ CREATE TABLE certificate_request (
 
 CREATE TABLE certificate (
   certificate_id  VARCHAR(10) PRIMARY KEY,
-  request_id      INT         NOT NULL UNIQUE,  
+  request_id      VARCHAR(10) NOT NULL UNIQUE,  
   issue_date      DATE        NOT NULL DEFAULT (CURRENT_DATE),
   CONSTRAINT fk_cert_request FOREIGN KEY (request_id)
     REFERENCES certificate_request(request_id) ON DELETE CASCADE
