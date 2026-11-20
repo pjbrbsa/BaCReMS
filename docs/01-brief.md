@@ -34,4 +34,4 @@ Number of tables: 5
 2. Show a count of requests per certificate type.
 
 ## 6. Similar apps I looked at
-- **PSA Helpline:** I'll borrow the idea of tracking a request by a reference number. In my app, the Request ID (like REQ01) serves as the reference number.
+- **PSA Helpline:** I'll borrow the idea of tracking a request by a reference number. Our app, the Request ID (like REQ01) serves as the reference number.
