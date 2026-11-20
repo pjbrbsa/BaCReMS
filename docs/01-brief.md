@@ -2,8 +2,7 @@
 
 ## 1. The problem
 Residents have to go to the barangay hall to request certificates, and
-officials record requests on paper. Requests get lost, and residents can't
-see whether their request is still pending or already approved.
+officials record requests on paper.
 
 ## 2. Users and what they need to do
 
