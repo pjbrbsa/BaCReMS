@@ -56,7 +56,9 @@
 
         <div class="field">
           <label for="purpose_of_request">Purpose of request *</label>
-          <input id="purpose_of_request" name="purpose_of_request" type="text" maxlength="150" placeholder="Enter the purpose of the request" required>
+          <input id="purpose_of_request" name="purpose_of_request" type="text" maxlength="150" required
+                 class="invalid" aria-invalid="true" aria-describedby="purpose_of_request-error">
+          <p class="error" id="purpose_of_request-error">! Purpose of request is required.</p>
         </div>
 
         <div class="field">
