@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS bacrems_db;
+USE bacrems_db;
+
 CREATE TABLE resident (
   resident_id    VARCHAR(10)  PRIMARY KEY,
   resident_name  VARCHAR(100) NOT NULL,
