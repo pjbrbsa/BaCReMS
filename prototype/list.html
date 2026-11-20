@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certificate Requests | BaCReMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="brand">BaCReMS</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="list.html" aria-current="page">Requests</a></li>
+          <li><a href="#">Residents</a></li>
+          <li><a href="#">Certificate Types</a></li>
+          <li><a href="#">Staff</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="page-head">
+      <h1>Certificate Requests</h1>
+      <a href="form.html" class="btn">+ New Request</a>
+    </div>
+
+    <form class="toolbar" action="#" method="get" role="search">
+      <div class="search-field">
+        <label for="q" class="sr-only">Search by Request ID or resident name</label>
+        <input id="q" name="q" type="search" placeholder="Search by Request ID or resident name">
+      </div>
+      <div>
+        <label for="request_status" class="sr-only">Status</label>
+        <select id="request_status" name="request_status">
+          <option value="">Status: All</option>
+          <option value="Pending">Pending</option>
+          <option value="Approved">Approved</option>
+        </select>
+      </div>
+      <div>
+        <label for="certificate_type_id" class="sr-only">Certificate type</label>
+        <select id="certificate_type_id" name="certificate_type_id">
+          <option value="">Certificate: All</option>
+          <option value="CT01">Barangay Clearance</option>
+          <option value="CT02">Certificate of Residency</option>
+          <option value="CT03">Certificate of Indigency</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Search</button>
+    </form>
+
+    <p class="result-count">Showing 6 of 6 requests</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Request ID</th>
+            <th scope="col">Resident</th>
+            <th scope="col">Certificate</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Request ID">REQ06</td>
+            <td data-label="Resident">Princess Barbosa</td>
+            <td data-label="Certificate">Certificate of Residency</td>
+            <td data-label="Date">2026-11-15</td>
+            <td data-label="Status"><span class="status">Pending</span></td>
+            <td class="cell-actions">
+              <div class="actions">
+                <a href="#" class="btn-secondary btn-sm">View</a>
+                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Request ID">REQ05</td>
+            <td data-label="Resident">Marinel Rebuya</td>
+            <td data-label="Certificate">Certificate of Indigency</td>
+            <td data-label="Date">2026-11-14</td>
+            <td data-label="Status"><span class="status">Pending</span></td>
+            <td class="cell-actions">
+              <div class="actions">
+                <a href="#" class="btn-secondary btn-sm">View</a>
+                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Request ID">REQ04</td>
+            <td data-label="Resident">Princess Barbosa</td>
+            <td data-label="Certificate">Barangay Clearance</td>
+            <td data-label="Date">2026-11-12</td>
+            <td data-label="Status"><span class="status status-approved">Approved</span></td>
+            <td class="cell-actions">
+              <div class="actions">
+                <a href="#" class="btn-secondary btn-sm">View</a>
+                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Request ID">REQ02</td>
+            <td data-label="Resident">Marinel Rebuya</td>
+            <td data-label="Certificate">Certificate of Residency</td>
+            <td data-label="Date">2026-11-10</td>
+            <td data-label="Status"><span class="status">Pending</span></td>
+            <td class="cell-actions">
+              <div class="actions">
+                <a href="#" class="btn-secondary btn-sm">View</a>
+                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Request ID">REQ03</td>
+            <td data-label="Resident">Princess Barbosa</td>
+            <td data-label="Certificate">Certificate of Indigency</td>
+            <td data-label="Date">2026-11-05</td>
+            <td data-label="Status"><span class="status status-approved">Approved</span></td>
+            <td class="cell-actions">
+              <div class="actions">
+                <a href="#" class="btn-secondary btn-sm">View</a>
+                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Request ID">REQ01</td>
+            <td data-label="Resident">Marinel Rebuya</td>
+            <td data-label="Certificate">Barangay Clearance</td>
+            <td data-label="Date">2026-11-03</td>
+            <td data-label="Status"><span class="status status-approved">Approved</span></td>
+            <td class="cell-actions">
+              <div class="actions">
+                <a href="#" class="btn-secondary btn-sm">View</a>
+                <a href="form.html" class="btn-secondary btn-sm">Edit</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="hint">Delete is shown only for Pending requests. Approved requests are kept as records.</p>
+
+    <nav aria-label="Pagination">
+      <ul class="pagination">
+        <li><a href="#" aria-label="Previous page">&lt;</a></li>
+        <li><a href="#" aria-current="page">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#" aria-label="Next page">&gt;</a></li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">BaCReMS: Barangay Certificate Request Management System</div>
+  </footer>
+
+</body>
+</html>
 
