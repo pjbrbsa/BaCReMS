@@ -14,6 +14,7 @@ see whether their request is still pending or already approved.
 
 ## 3. The database behind it
 Database name: bacrems_db
+
 Number of tables: 5
 
 - resident: stores each resident's name, birth date, gender, zone, and civil status.
