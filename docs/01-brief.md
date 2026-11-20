@@ -26,7 +26,7 @@ Number of tables: 5
 1. Add, edit, and view resident records.
 2. Submit a certificate request for a resident.
 3. View the list of all certificate requests with resident and certificate type.
-4. Search requests by resident name or status.
+4. Search requests by Request ID, resident name, or status.
 5. Approve a pending request.
 6. Issue a certificate for an approved request.
 
@@ -35,3 +35,4 @@ Number of tables: 5
 2. Show a count of requests per certificate type.
 
 ## 6. Similar apps I looked at
+- **PSA Helpline:** I'll borrow the idea of tracking a request by a reference number. In my app, the Request ID (like REQ01) serves as the reference number.
